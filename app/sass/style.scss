@@ -1,0 +1,1041 @@
+$head-color: #1d1f20;
+$text-color: #333;
+$btn-color: #009DDA;
+$hov-btn: #0068AA;
+$hov-menu: #2d2e30;
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Helvetica-Neue', sans-serif;
+	font-size: 14px;
+	line-height: 22.008px;
+	color: #333;
+	background-color: #fff;
+	transition: all .2s ease;
+}
+
+// Боковое меню
+.vertical-menu {
+	display: block;
+	z-index: 999;
+	position: absolute;
+	.menu-links {
+		height: 100%;
+		position: fixed;
+		width: 97px;
+		background: #fff;
+		box-shadow: 5px -10px 20px rgba(0,0,0,.1);
+		z-index: 999;
+		ul {
+			// Ссылки на боковом меню
+			.nav__link {
+				text-align: center;
+				height: 77px;
+				border-top: 1px solid #dee1e3;
+				vertical-align: middle;
+				cursor: pointer;
+				z-index: 1;
+				a {
+					font-family: 'VW Head-Bold';
+					color: #808890;
+					text-decoration: none solid rgb(45, 46, 48);
+					font-weight: 700;
+					font-size: 12px;
+					letter-spacing: -0.25px;
+					line-height: 13px;
+					vertical-align: start;
+					z-index: 1;
+					&:hover {
+						color: #2d2e30;
+					}
+					&:before {
+						display: block;
+					}
+				}
+				.link__icon {
+					opacity: 0;
+					display: block;
+				}
+				&:hover > a {
+					color: #2d2e30;
+				}
+
+			}
+			// Эмблема Volkswagen на боковом меню
+			.main__nav {
+				height: 122.99px;
+			}
+			// Ссылка "Модели" на боковом меню
+			.link__model {
+			    a {
+					&:before {
+						content: url('../../dist/img/icons/1.png');
+						padding-bottom: 8px;
+					}
+				}
+				&:hover > a:before {
+					content: url('../../dist/img/icons/active_icons/1h.png');
+					padding-right: 1px;
+				}
+			}
+			// Ссылка "Автомобили в наличии"
+			.link__cars {
+				position: relative;
+				a {
+					white-space: normal;
+					position: absolute;
+					left: 0;
+					top: 18px;
+					&:before {
+						content: url('../../dist/img/icons/2.png');
+						padding-bottom: 5px;
+					}
+				}
+				&:hover > a:before {
+					content: url('../../dist/img/icons/active_icons/2h.png');
+					padding-right: 2px;
+				}
+			}
+			// Ссылка "Trade-in"
+			.link__trade {
+				position: relative;
+				a {
+					position: absolute;
+					left: 25px;
+					bottom: 25px;
+				}
+			}
+			// Ссылка "Запись на тест-драйв"
+			.link__test-drive {
+				position: relative;
+				a {
+					white-space: normal;
+					position: absolute;
+					left: 20%;
+					top: 15px;
+					&:before {
+						content: url('../../dist/img/icons/test-drive.jpg');
+						padding-bottom: 10px;
+					}
+				}
+				&:hover > a:before {
+					content: url('../../dist/img/icons/active_icons/test-drive-h.jpg');
+				}
+			}
+			// Ссылка "Акции"
+			.link__stock {
+				position: relative;
+				a {
+					white-space: normal;
+					position: absolute;
+					left: 33%;
+					top: 14px;
+					&:before {
+						content: url('../../dist/img/icons/3.png');
+						padding-bottom: 2px;
+					}
+				}
+				&:hover > a:before {
+					content: url('../../dist/img/icons/active_icons/3h.png');
+				}
+
+			}
+			// Ссылка "Сервис"
+			.link__service {
+				position: relative;
+				a {
+					white-space: normal;
+					position: absolute;
+					left: 30%;
+					top: 14px;
+					&:before {
+						content: url('../../dist/img/icons/4.png');
+						padding-bottom: 3px;
+					}
+					&:hover:before {
+						content: url('../../dist/img/icons/active_icons/4h.png');
+						padding-left: 1px;
+					}
+				}
+				&:hover > a:before {
+					content: url('../../dist/img/icons/active_icons/4h.png');
+					padding-left: 1px;
+				}
+
+			}
+			// Ссылка на вложенное меню "Больше"
+			.link__more {
+				position: relative;
+				transition-delay: .3s;
+				a {
+					white-space: normal;
+					position: absolute;
+					left: 28px;
+					top: 20px;
+					&:before {
+						content: url('../../dist/img/icons/more.png');
+						padding-bottom: 20px;
+					}
+					&:hover:before {
+						content: url('../../dist/img/icons/active_icons/more_h.png');
+						padding-top: 1px;
+						padding-left: 1px;
+					}
+				}
+				&:hover > a:before {
+					content: url('../../dist/img/icons/active_icons/more_h.png');
+					padding-top: 1px;
+					padding-left: 1px;
+				}
+			}
+			// Выпадающое боковое меню
+			.more-hide__menu {
+				background: #fff;
+				position: absolute;
+				top: 0;
+				left: -245px;
+				padding: 50px 20px;
+				height: 100vh;
+				border-left: 1px solid #dee1e3;
+				transform: translateZ(0);
+    			transition: left .3s cubic-bezier(.18,0,.14,1),right .3s cubic-bezier(.18,0,.14,1);
+    			z-index: -1;
+    			cursor: pointer;
+    			display: block;
+				ul {
+					.hide__link {
+						width: 204px;
+						list-style: none;
+						border-top: 1px solid #dee1e3;
+						padding: 20px 0;
+						position: relative;
+						.icon {
+							opacity: 0;
+						}
+						a {
+							padding-left: 30px;
+							text-decoration: none;
+							font-size: 12px;
+							font-family: 'VW Head-Regular', sans-serif;
+							line-height: 13px;
+							color: #808890;
+							&:before {
+								position: absolute;
+								left: 15px;
+							}
+						}
+						&:first-child {
+							border-top: none;
+						}
+						&:hover > a {
+							color: #2d2e30;
+						}
+					}
+					.customer__link {
+						a {
+							&:before {
+								content: url('../../dist/img/icons/5.png');
+							}
+						}
+						&:hover > a:before {
+							content: url('../../dist/img/icons/active_icons/5h.png');
+						}
+					}
+					.service__link {
+						a {
+							&:before {
+								content: url('../../dist/img/icons/6.png');
+							}
+						}
+						&:hover > a:before {
+							content: url('../../dist/img/icons/active_icons/6h.png');
+						}
+					}
+					.contact__link {
+						a {
+							&:before {
+								content: url('../../dist/img/icons/8.png');
+							}
+						}
+						&:hover > a:before {
+							content: url('../../dist/img/icons/active_icons/8h (1).png');
+						}
+					}
+					.news__link {
+						a {
+							&:before {
+								content: url('../../dist/img/icons/7 (1).png');
+							}
+						}
+						&:hover > a:before {
+							content: url('../../dist/img/icons/active_icons/7h.png');
+							padding-top: 3px;
+							padding-left: 1px;
+						}
+					}
+					.vocab__link {
+						a {
+							span {
+								padding-left: 60px;
+							}
+							&:before {
+								content: url('../../dist/img/icons/8 (1).png');
+								padding-top: 7px;
+							}
+						}
+						&:hover > a:before {
+							content: url('../../dist/img/icons/active_icons/8h.png');
+							padding-top: 5px;
+							padding-left: 1px;
+						}
+					}
+					.press__link {
+						a {
+							&:before {
+								content: url('../../dist/img/icons/9.png');
+								padding-top: 5px;
+							}
+						}
+						&:hover > a:before {
+							content: url('../../dist/img/icons/active_icons/9h.png');
+							padding-top: 4px;
+						}
+					}
+				}
+				&:hover {
+					left: 96px;
+				}
+			}
+			.link__more:hover +.more-hide__menu {
+				left: 96px;
+			}
+		}
+	}
+}
+
+// Стиль для Меню для мобильных устройств
+.header__mobile-menu {
+	position: absolute;
+	z-index: 1000;
+	background: #fff;
+	width: 100%;
+	padding-top: 50px;
+	display: none;
+	box-shadow: 5px -10px 20px rgba(0,0,0,.1);
+	.mobile-menu__nav {
+		ul {
+			width: 90%;
+			margin: 0 auto;
+			.mobile-menu__link {
+				list-style: none;
+				border-bottom: 1px solid #dee1e3;
+				height: 50px;
+				position: relative;
+				cursor: pointer;
+				padding-left: 12%;
+				&:hover {
+					& > a {
+						color: $hov-menu;
+					}
+				}
+				a {
+					text-decoration: none;
+					font-size: 12px;
+					font-family: 'VW Head-Bold', sans-serif;
+					color: #808890;
+					letter-spacing: -0.25px;
+					line-height: 13px;
+					font-weight: 700;
+					transition: all .2s ease;
+
+					position: absolute;
+					padding-left: 7%;
+					top: 35%
+				}
+				.nav__icon {
+					// position: absolute;
+				}
+			}
+			.nav__model {
+				.nav__icon {
+					content: url('../../dist/img/icons/1.png');
+					padding-top: 15px;
+				}
+				&:hover > .nav__icon {
+					content: url('../../dist/img/icons/active_icons/1h.png');
+				}
+				&:hover {
+					padding-left: 11.9%;
+				}
+			}
+			.nav__cars {
+				.nav__icon {
+					content: url('../../dist/img/icons/2.png');
+					padding-top: 12px;
+				}
+				&:hover > .nav__icon {
+					content: url('../../dist/img/icons/active_icons/2h.png');
+				}
+			}
+			.nav__trade {
+				a {
+					padding-left: 9%;
+				}
+				.nav__icon {
+					opacity: 0;
+				}
+			}
+			.nav__record-drive {
+				a {
+					padding-left: 10%;
+				}
+				.nav__icon {
+					content: url('../../dist/img/icons/test-drive.jpg');
+					padding-top: 12px;
+				}
+				&:hover > .nav__icon {
+					content: url('../../dist/img/icons/active_icons/test-drive-h.jpg')
+				}
+			}
+			.nav__stock {
+				a {
+					padding-left: 9%;
+				}
+				.nav__icon {
+					content: url('../../dist/img/icons/3.png');
+					padding-top: 11px;
+				}
+				&:hover > .nav__icon {
+					content: url('../../dist/img/icons/active_icons/3h.png');
+				}
+			}
+			.nav__service {
+				a {
+					padding-left: 8.3%;
+				}
+				.nav__icon {
+					content: url('../../dist/img/icons/4.png');
+					padding-top: 7px;
+				}
+				&:hover > .nav__icon {
+					content: url('../../dist/img/icons/active_icons/4h.png')
+				}
+			}
+			.nav__costumer {
+				a {
+					padding-left: 10.5%;
+				}
+				.nav__icon {
+					content: url('../../dist/img/icons/5.png');
+					padding-top: 12px;
+				}
+				&:hover > .nav__icon {
+					content: url('../../dist/img/icons/active_icons/5h.png');
+				}
+			}
+			.nav__en-service {
+				a {
+					padding-left: 8.9%;
+				}
+				.nav__icon {
+					content: url('../../dist/img/icons/6.png');
+					padding-top: 10px;
+				}
+				&:hover > .nav__icon {
+					content: url('../../dist/img/icons/active_icons/6h.png');
+				}
+			}
+			.nav__contacts {
+				a {
+					padding-left: 10.5%;
+				}
+				.nav__icon {
+					content: url('../../dist/img/icons/8.png');
+					padding-top: 14px;
+				}
+				&:hover > .nav__icon {
+					content: url('../../dist/img/icons/active_icons/8h (1).png');
+				}
+			}
+			.nav__news {
+				a {
+					padding-left: 10.5%;
+				}
+				.nav__icon {
+					content: url('../../dist/img/icons/7 (1).png');
+					padding-top: 14px;
+				}
+				&:hover > .nav__icon {
+					content: url('../../dist/img/icons/active_icons/7h.png');
+					padding-top: 17px;
+				}
+				&:hover {
+					padding-left: 12.2%;
+				}
+			}
+			.nav__vocab {
+				a {
+					padding-left: 9.6%;
+				}
+				.nav__icon {
+					content: url('../../dist/img/icons/8 (1).png');
+					padding-top: 10px;
+				}
+				&:hover > .nav__icon {
+					content: url('../../dist/img/icons/active_icons/8h.png');
+					padding-top: 8px;
+				}
+				&:hover {
+					padding-left: 12.2%;					
+				}
+			}
+			.nav__press {
+				a {
+					padding-left: 11%;
+				}
+				.nav__icon {
+					content: url('../../dist/img/icons/9.png');
+					padding-top: 18px;
+				}
+				&:hover > .nav__icon {
+					content: url('../../dist/img/icons/active_icons/9h.png');
+					padding-top: 17.5px;
+				}
+			}
+		}
+	}
+}
+
+// Стиль всего контента
+.content {
+	padding-left: 97px;
+	// Шапка сайта
+	header {
+		// height: 73px;
+		vertical-align: middle;
+		// padding-top: 1.1rem;
+        // padding-bottom: 1.5rem;
+  		padding: 11px 0 15px;
+		.header-section {
+			padding: 0px 50px 0px 49px;
+			margin: auto 0;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			align-self: center;
+			.header__title {
+	    		height: 47px;
+	    		.main__title {
+	    			font-family: 'VW Text-Regular', sans-serif;
+	    			font-size: 16px;
+	    			line-height: 25px;
+	    			font-weight: 300;
+	    			text-decoration: none solid rgb(51, 51, 51);
+	    			margin: 0 0 3px;
+	    		}
+	    		.sub__title {
+	    			font-size: 11px;
+	    			font-family: 'VW Text-Regular', sans-serif;
+	    			color: #808890;
+	    			font-weight: 400;
+	    		}
+    		}
+			.header__call-form {
+				justify-self: end;
+				display: grid;
+				grid-template-columns: 2fr 1fr;
+				grid-gap: 15px;
+				.call {
+					justify-self: end;
+					align-self: center;
+					// Номер телефона
+					.call-phone {
+						display: flex;
+						margin-bottom: 2px;
+						position: relative;
+						img {
+							margin: 0 4px 0 0;
+						}
+						a {
+							text-decoration: none;
+							line-height: 22px;
+							word-spacing: 0px;
+							letter-spacing: .25px;
+							color: $btn-color;
+							font-family: 'VW Text-Regular', sans-serif;
+							transition: all 0s ease 0s;
+							&:hover {
+								color: $hov-btn;
+							}
+							&:before {
+								content: url('../../dist/img/icons/tel_top.png');
+								position: absolute;
+								left: 0;
+							}
+						}
+						.icon {
+							opacity: 0;
+						}
+					}
+					// Адрес, карта
+					.call-map {
+						display: flex;
+						position: relative;
+						img {
+							margin: 0 3px 0 0;
+						}
+						a {
+							text-decoration: none;
+							line-height: 22px;
+							word-spacing: 0px;
+							letter-spacing: .25px;
+							color: $btn-color;
+							font-family: 'VW Text-Regular', sans-serif;
+							transition: all 0s ease 0s;
+							&:hover {
+								color: $hov-btn;
+							}
+							&:before {
+								content: url('../../dist/img/icons/map_top.png');
+								position: absolute;
+								left: 0;
+							}
+						}
+						.icon {
+							opacity: 0;
+						}
+					}
+				}
+				.btn {
+					button {
+						width: 100px;
+						height: 42px;
+						line-height: 15px;
+					}
+				}
+			}
+			// Логотип (Появиться на мобильной верстке)
+			.mobile__logo {
+				position: absolute;
+				z-index: 1001;
+				left: 15px;
+				display: none;
+				a {
+					img {
+						width: 30px;
+					}
+				}
+			}
+			// Бургер меню (Появиться на мобильной верстке)
+			.mob-menu__burger {
+				justify-self: end;
+				display: none;
+				cursor: pointer;
+			}
+		}
+	}
+
+	// Секция где только слайдер под шапкой
+	.section-slider {
+		position: relative;
+		// Меню на слайдере
+		.slider__menu {
+			position: absolute;
+			top: 35px;
+			right: 48px;
+			z-index:1;
+			width: 330px;
+			ul {
+				display: grid;
+				grid-template-columns: repeat(4, 1fr);
+				grid-gap: 10px;
+				align-items: center;
+				text-align: center;
+				.slider__links {
+					list-style: none;
+					cursor: pointer;
+					.link__icon {
+						height: 30px;
+						width: 30px;
+						background: rgba(29,31,32,.4);
+						border-radius: 50%;
+						position: relative;
+						margin: auto;
+						margin-bottom: 6px;
+						cursor: pointer;
+						transition: all .1s ease;
+						img {
+							position: absolute;
+						    top: 6px;
+						    left: 5px;
+						}
+						.test {
+							left: 6.2px;
+						}
+					}
+					a {
+						text-decoration: none;
+						color: #1D1F20;
+						font-size: 12px;
+						line-height: 17px;
+					}
+					&:hover > .link__icon {
+						background: rgba(29,31,32, .7);
+					}
+				}
+			}
+		}
+	}
+
+	// Форма для ввода данных (имя, номер)
+	.section-form {
+		background: $btn-color;
+		padding: 60px;
+		margin-top: 50px;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 25px;
+		.form__text {
+			.form__title {
+				color: #fff;
+				text-align: start;
+			}
+			.form__subtitle {
+				font-size: 14px;
+				font-family: 'Helvetica-Neue', sans-serif;
+				line-height: 20px;
+				color: #fff;
+			}
+		}
+		.form__inputs {
+			.inputs__block {
+				input {
+					border: none;
+					border-radius: 4px;
+					width: 94.5%;
+					background: #fff;
+					padding: 12px 15px;
+					margin: 0px 0px 18px;
+					display: block;
+					font-size: 14px;
+					line-height: 20px;
+					font-family: 'Helvetica-Neue', sans-serif;
+					outline: none;
+				}
+			}
+			.check__block {
+				margin-top: 25px;
+				margin-bottom: 20px;
+				.first__agree,
+				.last__agree {
+					margin-bottom: 5px;
+					label {
+						a {
+							padding-left: 14px;
+							color: #fff;
+							font-size: 14px;
+							font-weight: 700;
+							line-height: 20px;
+							font-family: 'Helvetica-Neue', sans-serif;
+							&:hover {
+								text-decoration: none;
+							}
+						}
+					}
+					input {
+						position: absolute;
+						z-index: -1;
+						opacity: 0;
+						& + label {
+							position: relative;
+							padding-left: 14px;
+						}
+						& + label:before {
+							position: absolute;
+							content: url('../../dist/img/icons/un_check.png');
+							transition: .2s;
+						}
+						&:checked + label:before {
+							content: url('../../dist/img/icons/active_icons/check.png');
+						}
+					}
+				}
+				.first__agree {
+					input {
+						& + label {
+							left: 40px;
+						}
+						& + label:before {
+							top: -7px;
+							left: -25px;
+						}
+					}
+				}
+				.last__agree {
+					input {
+						& + label {
+							padding-bottom: 10px;
+							top: 30px;
+							left: 40px;
+						}
+						& + label:before {
+							top: -7px;
+							left: -25px;
+						}
+					}
+				}
+			}
+			.button__block {
+				margin-top: 70px;
+				margin-bottom: 27px;
+				.block__btn {
+					line-height: 16px;
+					padding: 12px 45px;
+					text-align: center;
+					&[disabled] {
+						opacity: .6;
+						cursor: not-allowed;
+						color: $btn-color;
+						background: #fff;
+						border: 1px solid #dee1e3 !important;
+					}
+				}
+			}
+			.check__block {
+				input[type=checkbox]:checked + .button__block .block__btn {
+					color: red;
+				}
+			}
+		}
+	}
+
+	// Информация о продукте
+	.section-features {
+		padding: 80px 60px;
+		background: #F3F5F6;
+		.features-services {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-gap: 15px;
+			padding-bottom: 60px;
+			.service {
+				text-align: center;
+				display: grid;
+				grid-template-rows: 150px 80px 50px;
+				img {
+					width: 125px;
+					justify-self: center;
+				}
+				.title {
+					align-self: start;
+					line-height: 25px;
+				}
+				.link {
+					align-items: center;
+					display: flex;
+					justify-content: center;
+					margin-top: 35px;
+					img {
+						align-items: center;
+						width: 15px;
+					}
+					a {
+						color: $btn-color;
+						text-decoration: none;
+						transition: all .2s ease;
+						padding: 0 0 0 10px;
+						letter-spacing: -0.25px;
+						&:hover {
+							color: $hov-btn;
+						}
+					}
+				}
+			}
+		}
+		.features-inform {
+			padding-top: 60px;
+			.inform__text {
+				margin-bottom: 45px;
+				h3 {
+					margin-bottom: 30px;
+					text-align: start;
+					line-height: 1.154;
+				}
+				span {
+					display: inline-block;
+					.paragraph {
+						font-weight: 700;
+					}
+					li {
+						padding-left: 30px;
+						margin: 10px 0 10px;
+						line-height: 20px;
+					}
+				}
+			}
+		}
+	}
+
+	// Кнопка на вверх
+	.top-yak {
+		background: #F3F5F6;
+		padding-bottom: 10px;
+		.yak {
+			background: #DEE1E3;
+			display: flex;
+			text-align: end;
+			height: 35px;
+			position: relative;
+			a {
+				font-size: 14px;
+				text-decoration: none;
+				color: #2F3538;
+				font-family: 'Helvetica-Neue', sans-serif;
+				line-height: 22px;
+				display: grid;
+				grid-template-columns: 1fr .1fr;
+				align-self: center;
+				align-items: flex-start;
+				position: absolute;
+				right: 40px;
+			}
+		}
+		.top-centre {
+			font-size: 13px;
+			font-family: 'Helvetica-Neue', sans-serif;
+			color: $text-color;
+			line-height: 20px;
+			padding-left: 60px;
+			margin-top: 8px;
+		}
+	}
+	
+	// Футер на сайте
+	.section-footer {
+		padding: 0 50px;
+		.footer__links {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			grid-gap: 15px;
+			padding-top: 23px;
+			.columns {
+				ul {
+					.link {
+						height: 50px;
+						border-top: 1px solid #dee1e3;
+						list-style: none;
+						padding: 0 8px;
+						&:first-child {
+							border-top: none;
+						}
+						a {
+							display: inline-block;
+							vertical-align: middle;
+							text-decoration: none;
+							white-space: normal;
+							padding-top: 15px;
+							color: #000;
+							&:hover {
+								color: #0099da;
+							}
+						}
+					}
+				}
+			}
+			.fourth__column {
+				ul {
+					.link__insta {
+						display: flex;
+						align-items: center;
+						position: relative;
+						span {
+							opacity: 0;
+						}
+						a {
+							padding-left: 5px;
+							padding-top: 5px;
+							&:before {
+								content: url('../../dist/img/icons/in.png');
+								position: absolute;
+								left: 7px;
+								top: 15px;
+							}
+							&:hover:before {
+									content: url('../../dist/img/icons/active_icons/inh.png')
+								}
+						}
+					}
+					.link__fb {
+						display: flex;
+						align-items: center;
+						position: relative;
+						span {
+							opacity: 0;
+						}
+						a {
+							padding-left: 5px;
+							&:before {
+								content: url('../../dist/img/icons/fb.png');
+								position: absolute;
+								left: 7px;
+								top: 15px;
+							}
+							&:hover:before {
+									content: url('../../dist/img/icons/active_icons/fb_h.png')
+								}
+						}
+					}
+				}
+			}
+		}
+		.footer__copyright {
+			margin-top: 60px;
+			.copyright {
+				line-height: 22.008px;
+			}
+			.copyright__links {
+				margin-top: 12px;
+				ul {
+					.link {
+						list-style: none;
+						display: inline-block;
+						border-right: 1px solid #2f3835;
+						padding: 0 10px;
+						&:first-child {
+							padding-left: 0;
+						}
+						&:last-child {
+							border-right: none;
+						}
+						a {
+							text-decoration: none;
+							line-height: 22.008px;
+							color: #000;
+							&:hover {
+								color: #2f3835;
+							}
+						}
+					}
+				}
+			}
+		}
+		.footer__rules {
+			margin-top: 50px;
+			padding-bottom: 70px;
+			.first__rule,
+			.second__rule,
+			.third__rule {
+				font-size: 11px !important;
+				font-family: 'Helvetica-Neue', sans-serif;
+				color: #808890;
+				display: block;
+				line-height: 14.5px;
+			}
+		}
+	}
+}
+
+@import 'media'

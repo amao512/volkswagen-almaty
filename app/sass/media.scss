@@ -1,0 +1,2044 @@
+$head-color: #1d1f20;
+$text-color: #333;
+$btn-color: #009DDA;
+$hov-btn: #0068AA;
+
+@media screen and  (min-width: 2560px) {
+	.content {
+		// Самый первый слайдер под шапкой
+		.first-slider {
+			.header-slider {
+				div {
+					img {
+						width: 100%;
+					}
+					.img__btn {
+						top: 92%;
+					}
+				}
+			}
+			.slider__arrows {
+				.slider__arrow {
+					top: 400px;
+				}
+			}
+		}
+
+		// Стиль и слайдер второй секции 
+		.section-products {
+			.products__slider {
+				// Слайдер под заголовкой "Модели Volkswagen"
+				.products {
+					.product__block {
+						img {
+							min-width: 593px;
+						}
+					}
+				}
+				.products__arrows {
+					.products__next,
+					.products__prev {
+						top: -200px;
+					}
+				}
+			}
+
+			// Слайдер под "Акции и спецпредложения"
+			.stock__slider {
+				.stock {
+					.stock__block {
+						img {
+							width: 1176px;
+						}
+						.tiguan {
+							height: 444.66px;
+						}
+						.about-slide {
+							width: 1176px;
+						}
+					}
+				}
+				.stock__slider__arrows {
+					.stock__arrow {
+						top: -500px;
+					}
+				}
+			}
+		}
+
+		// Слайдер новостей
+		.news__block {
+			.news {
+				min-width: 756px;
+				.news__img {
+					min-height: 425.25px;
+				}
+				.news__text {
+					height: 100px;
+				}
+			}
+		}
+
+		// Слайдер "Официальный дилер Volkswagen"
+		.dealer {
+			img {
+				min-width: 620px;
+			}
+		}
+
+		// Форма для ввода данных (имя, номер)
+		.section-form {
+			grid-template-columns: 2fr 1fr;
+		}
+	}
+}
+
+@media screen and  (max-width: 2560px){
+	.content {
+		// Самый первый слайдер под шапкой
+		.first-slider {
+			.header-slider {
+				div {
+					img {
+					width: 100%;
+					}
+					.img__btn {
+						top: 92%;
+					}
+				}
+			}
+			.slider__arrows {
+				.slider__arrow {
+					top: 400px;
+				}
+			}
+		}
+
+		// Стиль и слайдер второй секции 
+		.section-products {
+			.products__slider {
+				// Слайдер под заголовкой "Модели Volkswagen"
+				.products {
+					.product__block {
+						img {
+							min-width: 593px;
+						}
+					}
+				}
+				.products__arrows {
+					.products__next,
+					.products__prev {
+						position: absolute;
+						margin-top: -50px;
+					}
+				}
+			}
+
+			// Слайдер под "Акции и спецпредложения"
+			.stock__slider {
+				.stock {
+					.stock__block {
+						img {
+							width: 1176px;
+						}
+						.tiguan {
+							height: 444.66px;
+						}
+						.about-slide {
+							width: 1176px;
+						}
+					}
+				}
+			}
+		}
+
+		// Слайдер новостей
+		.news__block {
+			.news {
+				max-width: 756px;
+				.news__img {
+					max-height: 425.25px;
+				}
+				.news__text {
+					height: 100px;
+				}
+			}
+		}
+
+		// Слайдер "Официальный дилер Volkswagen"
+		.section-dealer {
+			.dealer {
+				img {
+					width: 620px;
+				}
+			}
+		}
+
+		// Форма для ввода данных (имя, номер)
+		.section-form {
+			grid-template-columns: 2fr 1fr;
+		}
+	}
+}
+
+@media screen and  (max-width: 2500px){
+	.content {
+		// Стиль и слайдер второй секции 
+		.section-products {
+			// Слайдер под "Акции и спецпредложения"
+			.stock__slider {
+				.stock__slider__arrows {
+					.stock__next {
+						right: 20%;
+					}
+					.stock__prev {
+						left: 20%;
+					}
+				}
+			}
+		}
+
+		// Слайдер новостей
+		.news__block {
+			.news {
+				max-width: 702px;
+				.news__img {
+					max-height: 394.88px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 2350px){
+	.content {
+		// Самый первый слайдер под шапкой
+		.first-slider {
+			.slider__arrows {
+				.slider__arrow {
+					top: 370px;
+				}
+			}
+		}
+		// Стиль и слайдер второй секции 
+		.section-products {
+			.products__slider {
+				// Слайдер под заголовкой "Модели Volkswagen"
+				.products {
+					.product__block {
+						img {
+							min-width: 509px;
+						}
+					}
+				}
+			}
+		}
+
+		// Слайдер новостей
+		.news__block {
+			.news {
+				max-width: 686px;
+				.news__img {
+					max-height: 385.88px;
+				}
+				.news__text {
+					height: 120px;
+				}
+			}
+		}
+
+	}
+}
+
+@media screen and (max-width: 2260px){
+	.content {
+		// Стиль и слайдер второй секции 
+		.section-products {
+			// Слайдер под "Акции и спецпредложения"
+			.stock__slider {
+				.stock {
+					.stock__block {
+						img {
+							width: 910px;
+						}
+						.tiguan {
+							height: 344.08px;
+						}
+						.about-slide {
+							width: 910px;
+						}
+					}
+				}
+				.stock__slider__arrows {
+					.stock__arrow {
+						top: -450px;
+					}
+				}
+			}
+		}
+
+		// Слайдер новостей
+		.news__block {
+			.news {
+				max-width: 656px;
+				.news__img {
+					max-height: 369px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 2160px){
+	.content {
+		// Самый первый слайдер под шапкой
+		.first-slider {
+			.slider__arrows {
+				.slider__arrow {
+					top: 350px;
+				}
+			}
+		}
+
+		// Слайдер новостей
+		.news__block {
+			.news {
+				max-width: 623px;
+				.news__img {
+					max-height: 350.40px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 2060px){
+	.content {
+		// Стиль и слайдер второй секции 
+		.section-products {
+			.products__slider {
+				// Слайдер под заголовкой "Модели Volkswagen"
+				.products {
+					.product__block {
+						img {
+							min-width: 437px;
+						}
+					}
+				}
+			}
+		}
+
+		// Слайдер новостей
+		.news__block {
+			.news {
+				max-width: 589px;
+				.news__img {
+					max-height: 331.31px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1965px){
+	.content {
+		// Самый первый слайдер под шапкой
+		.first-slider {
+			.header-slider {
+				// Кнопка "Подробнее" внутри слайдера
+				.img__btn {
+					margin-top: -1%;
+				}
+			}
+			.slider__arrows{
+				.slider__arrow {
+					top: 300px;
+				}
+			}
+		}
+
+		// Стиль и слайдер второй секции 
+		.section-products {
+			.products__slider {
+				// Слайдер под заголовкой "Модели Volkswagen"
+				.products {
+					.product__block {
+						img {
+							min-width: 412px;
+						}
+					}
+				}
+			}
+
+			// Слайдер под "Акции и спецпредложения"
+			.stock__slider {
+				.stock {
+					.stock__block {
+						img {
+							width: 825px;
+						}
+						.tiguan {
+							height: 314.94px;
+						}
+						.about-slide {
+							width: 825px;
+						}
+					}
+				}
+				.stock__slider__arrows {
+					.stock__arrow {
+						top: -400px;
+					}
+				}
+			}
+		}
+
+		// Слайдер новостей
+		.news__block {
+			.news {
+				max-width: 555px;
+				.news__img {
+					max-height: 312.19px;
+				}
+			}
+		}
+
+		// Слайдер "Официальный дилер Volkswagen"
+		.section-dealer {
+			.dealer {
+				img {
+					width: 450px;
+				}
+			}
+		}
+
+		// Форма для ввода данных (имя, номер)
+		.section-form {
+			grid-template-columns: 2fr 1.1fr;
+		}
+	}
+}
+
+@media screen and (max-width: 1860px){
+	.content {
+		// Слайдер новостей
+		.news__block {
+			.news {
+				max-width: 491px;
+				.news__img {
+					max-height: 276.19px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1760px){
+	.content {
+		// Самый первый слайдер под шапкой
+		.first-slider {
+			.slider__arrows{
+				.slider__arrow {
+					top: 270px;
+				}
+			}
+		}
+
+		// Стиль и слайдер второй секции 
+		.section-products {
+			.products__slider {
+				// Слайдер под заголовкой "Модели Volkswagen"
+				.products {
+					.product__block {
+						img {
+							min-width: 364px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1660px){
+	.content {
+		// Самый первый слайдер под шапкой
+		.first-slider {
+			.header-slider {
+				// Кнопка "Подробнее" внутри слайдера
+				.img__btn {
+					margin-top: -2%;
+				}
+			}
+			.slider__arrows{
+				.slider__arrow {
+					top: 250px;
+				}
+			}
+		}
+
+		// Стиль и слайдер второй секции
+		.section-products {
+			// Слайдер под заголовкой "Модели Volkswagen"
+			.products__slider {
+				.products__arrows {
+					.products__next,
+					.products__prev {
+						position: absolute;
+						margin-top: -30px;
+					}
+				}
+			}
+
+			// Слайдер под "Акции и спецпредложения"
+			.stock__slider {
+				.stock {
+					.stock__block {
+						img {
+							width: 593px;
+						}
+						.tiguan {
+							height: 224.22px;
+						}
+						.about-slide {
+							width: 593px;
+						}
+					}
+				}
+				.stock__slider__arrows {
+					.stock__next {
+						right: 18%;
+					}
+					.stock__prev {
+						left: 18%;
+					}
+				}
+			}
+		}
+
+		// Слайдер новостей
+		.news__block {
+			.news {
+				max-width: 423px;
+				.news__img {
+					max-height: 237.94px;
+				}
+				.news__text {
+					height: 170px;
+				}
+			}
+		}
+
+		// Форма для ввода данных (имя, номер)
+		.section-form {
+			grid-template-columns: 1.7fr 1fr;
+		}
+	}
+}
+
+@media screen and (max-width: 1500px){
+	.content {
+		// Самый первый слайдер под шапкой
+		.first-slider {
+			.header-slider {
+				// Кнопка "Подробнее" внутри слайдера
+				.img__btn {
+					margin-top: -2%;
+				}
+			}
+			.slider__arrows{
+				.slider__arrow {
+					top: 220px;
+				}
+			}
+		}
+
+		// Стиль и слайдер второй секции
+		.section-products {
+			.products__slider {
+				// Слайдер под заголовкой "Модели Volkswagen"
+				.products {
+					.product__block {
+						img {
+							min-width: 295px;
+						}
+					}
+				}
+				.products__arrows {
+					.products__next,
+					.products__prev {
+						margin-top: -10px;
+					}
+				}
+			}
+		}
+
+
+		// Слайдер новостей
+		.news__block {
+			.news {
+				max-width: 400px;
+				.news__img {
+					max-height: 225px;
+				}
+			}
+		}
+
+		// Форма для ввода данных (имя, номер)
+		.section-form {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+}
+
+@media screen and (max-width: 1445px){
+	.content {
+		// Самый первый слайдер под шапкой
+		.first-slider {
+			.slider__arrows{
+				.slider__arrow {
+					top: 200px;
+				}
+			}
+		}
+
+		// Стиль и слайдер второй секции
+		.section-products {
+			// Слайдер под заголовкой "Модели Volkswagen"
+			.products__slider {
+				.products {
+					.product__block {
+						img {
+							min-width: 293px;
+						}
+					}
+				}
+			}
+
+			// Слайдер под "Акции и спецпредложения"
+			.stock__slider {
+				.stock {
+					.stock__block {
+						img {
+							width: 544px;
+						}
+						.tiguan {
+							height: 205.69px;
+						}
+						.about-slide {
+							width: 544px;
+						}
+					}
+				}
+				.stock__slider__arrows {
+					.stock__arrow {
+						top: -400px;
+					}
+					.stock__next {
+						right: 18%;
+					}
+					.stock__prev {
+						left: 18%;
+					}
+				}
+			}
+		}
+
+		// Слайдер "Официальный дилер Volkswagen"
+		.section-dealer {
+			.dealer {
+				.dealer__block {
+					img {
+						max-width: 320px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1365px){
+	.content {
+		// Самый первый слайдер под шапкой
+		.first-slider {
+			.header-slider {
+				div {
+					.img__btn {
+						top: 85%;
+					}
+				}
+			}
+			.slider__arrows {
+				.slider__arrow {
+					top: 170px;
+				}
+			}
+		}
+
+		// Стиль и слайдер второй секции
+		.section-products {
+			.products__slider {
+				// Слайдер под заголовкой "Модели Volkswagen"
+				.products {
+					.product__block {
+						img {
+							min-width: 272px;
+						}
+					}
+				}
+				.products__arrows {
+					.products__next,
+					.products__prev {
+						top: -150px;
+					}
+				}
+			}
+
+			// Слайдер под "Акции и спецпредложения"
+			.stock__slider {
+				.stock {
+					img {
+						max-width: 498px;
+					}
+					.tiguan {
+						height: 188.3px;
+					}
+					.about-slide {
+						width: 498px;
+					}
+				}
+				.stock__slider__arrows {
+					.stock__arrow {
+						top: -350px;
+					}
+					.stock__next {
+						right: 18%;
+					}
+					.stock__prev {
+						left: 18%;
+					}
+				}
+			}
+		}
+
+		// Слайдер новостей
+		.news__block {
+			.news {
+				width: 368px;
+				.news__img {
+					height: 207px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1250px){
+	.content {
+		// Футер на сайте
+		.section-footer {
+			.footer__links {
+				grid-template-columns: 1fr 1fr;
+			}
+		}
+		
+		// Слайдер новостей
+		.news__block {
+			.news {
+				.news__text {
+					height: 200px;
+				}
+			}
+		}
+
+	}
+}
+@media screen and (max-width: 1200px){
+	.content {
+		// Стиль и слайдер второй секции
+		.section-products {
+			// Слайдер под "Акции и спецпредложения"
+			.stock__slider {
+				.stock {
+					img {
+						max-width: 418px;
+					}
+					.tiguan {
+						height: 158.05px;
+					}
+					.about-slide {
+						width: 418px;
+					}
+				}
+			}
+		}
+
+		// Слайдер новостей
+		.news__block {
+			.news {
+				width: 325px;
+				.news__img {
+					height: 182.81px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1160px){
+	.content {
+		// Самый первый слайдер под шапкой
+		.first-slider {
+			.header-slider {
+				div {
+					.img__btn {
+						top: 85%;
+					}
+				}
+			}
+			.slider__arrows {
+				.slider__arrow {
+					top: 150px;
+				}
+			}
+		}
+
+		// Стиль и слайдер второй секции
+		.section-products {
+			// Слайдер под "Акции и спецпредложения"
+			.stock__slider {
+				.stock {
+					img {
+						max-width: 362px;
+					}
+					.tiguan {
+						max-height: 136.88px;
+					}
+					.about-slide {
+						max-width: 362px;
+					}
+				}
+			}
+		}
+
+		// Слайдер новостей
+		.news__block {
+			.news {
+				width: 294px;
+				.news__img {
+					height: 165.38px;
+				}
+				.news__text {
+					height: 245px;
+				}
+			}
+		}
+
+		// Слайдер "Официальный дилер Volkswagen"
+		.section-dealer {
+			.dealer {
+				.dealer__block {
+					img {
+						max-width: 270px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1060px){
+	.content {
+		// Слайдер новостей
+		.news__block {
+			.news {
+				width: 266px;
+				.news__img {
+					height: 149.63px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1025px){
+	.content {
+		// Шапка сайта
+		header {
+			.header-section {
+				// Скроем телефонный номер и адрес
+				.header__call-form {
+					display: block;
+					.call {
+						display: none;
+					}
+				}
+			}
+		}
+
+
+		// Самый первый слайдер под шапкой
+		.first-slider {
+			.header-slider {
+				div {
+					.img__btn {
+						top: 80%;
+					}
+				}
+			}
+			.slider__arrows {
+				.slider__arrow {
+					top: 130px;
+				}
+			}
+		}
+
+		// Слайдер новостей
+		.news__block {
+			.news {
+				width: 266px;
+				.news__img {
+					height: 149.63px;
+					padding: 0;
+				}
+			}
+		}
+	}
+
+	// Кнопка на вверх
+	.top-yak {
+		padding-bottom: 0px;
+		.top-centre {
+			display: none;
+		}
+	}
+
+	// Футер на сайте
+	.section-footer {
+		.footer__copyright {
+			text-align: center;
+		}
+	}
+
+	// Общие стили заголовок
+	.common-title {
+		font-size: 35px;
+	}
+	// Общие стили текстов
+	.common-text {
+		font-size: 15px;
+	}
+	// Общие стили для заголовок элемента или т.б.
+	.head-title {
+		font-size: 21px;
+	}
+}
+
+@media screen and (max-width: 1000px){
+	.content {
+		// Слайдер "Официальный дилер Volkswagen"
+		.section-dealer {
+			.dealer {
+				.dealer__block {
+					img {
+						min-width: 650px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 960px){
+	.content {
+		// Самый первый слайдер под шапкой
+		.first-slider {
+			.slider__arrows {
+				.slider__arrow {
+					top: 120px;
+				}
+			}
+		}
+
+		// Стиль и слайдер второй секции
+		.section-products {
+			// Слайдер под "Акции и спецпредложения"
+			.stock__slider {
+				.stock {
+					img {
+						max-width: 281px;
+					}
+					.tiguan {
+						max-height: 106.23px;
+					}
+					.about-slide {
+						max-width: 281px;
+					}
+				}
+			}
+		}
+
+		// Слайдер новостей
+		.news__block {
+			.news {
+				width: 239px;
+				.news__img {
+					height: 134.44px;
+				}
+				.news__text {
+					height: 260px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 880px){
+	.content {
+		// Самый первый слайдер под шапкой
+		.first-slider {
+			.slider__arrows {
+				.slider__arrow {
+					top: 110px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 835px){
+	.content {
+		// Слайдер новостей
+		.news__block {
+			.news {
+				.news__text {
+					height: 350px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 800px){
+	.content {
+		// Самый первый слайдер под шапкой
+		.first-slider {
+			.slider__arrows {
+				.slider__arrow {
+					top: 95px;
+				}
+			}
+		}
+
+		// Слайдер новостей
+		.news__block {
+			.news {
+				.news__title {
+					height: 90px;
+				}
+				.news__text {
+					height: 350px;
+				}
+			}
+		}
+
+		// Слайдер "Официальный дилер Volkswagen"
+		.section-dealer {
+			.dealer {
+				.dealer__block {
+					img {
+						min-width: 500px;
+					}
+				}
+			}
+		}
+
+		// Форма для ввода данных (имя, номер)
+		.section-form {
+			.form__inputs {
+				.check__block {
+					.last__agree {
+						label {
+							a {
+								span {
+									padding-left: 30px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+// Для мобильных устройств
+@media screen and (max-width: 770px){
+	// Боковое меню
+	.vertical-menu {
+		display: none;
+	}
+
+	// Стиль всего контента
+	.content {
+		padding-left: 0;
+		header {
+			.header-section {
+				grid-template-columns: 1fr 1fr .5fr;
+				padding: 0px 15px 0px 80px;
+				.header__title {
+					.sub__title {
+						display: none;
+					}
+				}
+				// Логотип (Появиться на мобильной верстке)
+				.mobile__logo {
+					display: block;
+					img {
+						width: 30px;
+					}
+				}
+				// Появиться бургер меню
+				.mob-menu__burger {
+					display: block;
+				}
+			}
+		}
+
+		.section-slider {
+			// Меню на слайдере
+			.slider__menu {
+				display: none;
+			}
+
+			// Самый первый слайдер под шапкой
+			.first-slider {
+				.slider__arrows {
+					.slider__arrow {
+						top: 100px;
+						height: 70px;
+						width: 32px;
+						i {
+							font-size: 40px;
+						}
+					}
+				}
+			}
+		}
+
+		.section-products {
+			// Слайдер под заголовкой "Модели Volkswagen"
+			.products__slider {
+				.products {
+					padding-top: 20px;
+				}
+				.products__arrows {
+					.products__arrow {
+						height: 70px;
+						width: 32px;
+						i {
+							font-size: 40px;
+						}
+					}
+				}
+			}	
+
+			// Слайдер под "Акции и спецпредложения"
+			.stock__slider {
+				.stock {
+					.stock__block {
+						img {
+							min-width: 666.97px;
+						}
+						.tiguan {
+							min-height: 252.17px;
+						}
+						.about-slide {
+							min-width: 663.06px;
+						}
+					}
+				}
+				.stock__slider__arrows {
+					.stock__next {
+						right: 0%;
+					}
+					.stock__prev {
+						left: 0%;
+					}
+				}
+			}
+		}
+
+		// Слайдер новостей
+		.section-news {
+			.news__block {
+				.news {
+					width: 231px;
+					.news__img {
+						height: 129.94px;
+						padding: 0 7.5px;
+					}
+					.news__title {
+						height: 90px;
+					}
+					.news__text {
+						height: 300px;
+					}
+				}
+			}
+		}
+
+		// Слайдер "Официальный дилер Volkswagen"
+		.section-dealer {
+			.dealer {
+				.dealer__block {
+					img {
+						min-width: 600px;
+					}
+				}
+			}
+		}
+
+		// Форма для ввода данных (имя, номер)
+		.section-form {
+			grid-template-columns: 1fr;
+			padding: 40px 20px;
+			.form__inputs {
+				.inputs__block {
+					input {
+						width: 91%;
+					}
+				}
+				.check__block {
+					.last__agree {
+						label {
+							a {
+								span {
+									padding-left: 0;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		// Информация о продукте
+		.section-features {
+			padding: 40px 20px;
+			.features-services {
+				grid-template-columns: 1fr;
+				padding: 0 10px;
+				.service {
+					grid-template-columns: 1fr 2fr;
+					grid-template-rows: 45px 50px;
+					margin-bottom: 60px;
+					align-items: center;
+					text-align: start;
+					img {
+						grid-column: 1/2;
+						grid-row: 1/3;
+						justify-self: center;
+					}
+					.title {
+						justify-self: start;
+					}
+					.link {
+						justify-self: start;
+					}
+				}
+			}
+			.features-inform {
+				.inform__text {
+					h3 {
+						margin-bottom: 20px;
+					}
+				}
+			}
+		}
+
+		// Кнопка на вверх
+		.top-yak {
+			padding-bottom: 0;
+		}
+
+		// Футер на сайте
+		.section-footer {
+			padding: 0 20px;
+			.footer__copyright {
+				.copyright__links {
+					ul .link {
+						margin-top: 10px
+					}
+				}
+			}
+			.footer__rules {
+				padding-bottom: 20px;
+			}
+		}
+	}
+
+	// Общие стили заголовок
+	.common-title {
+		font-size: 26px;
+	}
+}
+
+@media screen and (max-width: 720px){
+	.content {
+		.section-products {
+			// Слайдер под "Акции и спецпредложения"
+			.stock__slider {
+				.stock {
+					.stock__block {
+						img,
+						.about-slide {
+							min-width: 598.91px;
+						}
+						.tiguan {
+							min-height: 226.44px;
+						}
+					}
+				}
+			}
+		}
+		
+		// Слайдер новостей
+		.section-news {
+			.news__block {
+				.news {
+					.news__text {
+						height: 370px;
+					}
+				}
+			}
+		}
+
+		// Слайдер "Официальный дилер Volkswagen"
+		.section-dealer {
+			.dealer {
+				.dealer__block {
+					img {
+						min-width: 550px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 650px){
+	.content {
+		.section-products {
+			// Слайдер под "Акции и спецпредложения"
+			.stock__slider {
+				.stock {
+					.stock__block {
+						img,
+						.about-slide {
+							min-width: 551.25px;
+						}
+						.tiguan {
+							min-height: 208.42px;
+						}
+					}
+				}
+			}
+		}
+
+		// Стиль и слайдер секции новостей
+		.section-news {
+			.news__block {
+				.news {
+					.news__img {
+						width: 174px;
+						height: 100px;
+					}
+					.news__title {
+						font-size: 15px;
+						line-height: 18px;
+						padding: 0 10px;
+						margin-top: 10px;
+					}
+					.news__text {
+						display: none;
+					}
+					.news__btn {
+						display: none;
+					}
+				}
+			}
+		}
+
+		// Слайдер "Официальный дилер Volkswagen"
+		.section-dealer {
+			.dealer {
+				.dealer__block {
+					img {
+						min-width: 500px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 600px){
+	.content {
+		header {
+			.header-section {
+				grid-template-columns: 1fr 1fr .5fr;
+				padding: 0px 15px 0px 50px;
+				.header__title {
+					.sub__title {
+						display: none;
+					}
+				}
+				// Логотип (Появиться на мобильной верстке)
+				.mobile__logo {
+					display: block;
+					img {
+						width: 30px;
+					}
+				}
+				// Появиться бургер меню
+				.mob-menu__burger {
+					display: block;
+				}
+			}
+		}
+
+		.section-slider {
+			// Самый первый слайдер под шапкой
+			.first-slider {
+				.header-slider {
+					div {
+						max-height: 150px;
+						.img__btn {
+							top: 74%;
+							button {
+								padding: 7px 33px;
+								font-size: 12px;
+							}
+						}
+					}
+				}
+				.slider__arrows {
+					.slider__arrow {
+						top: 50px;
+						height: 45px;
+						width: 28px;
+						i {
+							font-size: 33px;
+							margin-top: 6px;
+						}
+					}
+					.slider__next {
+						i {
+							margin-left: -5px;
+						}
+					}
+				}
+			}
+		}
+		.section-products {
+			padding-top: 20px;
+			// Слайдер под заголовкой "Модели Volkswagen"
+			.products__slider {
+				.products {
+					padding-top: 0px;
+				}
+				.products__arrows {
+					.products__arrow {
+						height: 45px;
+						width: 28px;
+						top: -135px;
+						i {
+							font-size: 33px;
+							margin-top: 6px;
+						}
+					}
+					.products__next {
+						i {
+							margin-left: -5px;
+						}
+					}
+				}
+			}	
+
+			// Слайдер под "Акции и спецпредложения"
+			.stock__slider {
+				.stock {
+					.stock__block {
+						img,
+						.about-slide {
+							min-width: 498.75px;
+						}
+						.tiguan {
+							min-height: 188.58px;
+						}
+					}
+				}
+			}
+		}
+
+		// Стиль и слайдер секции новостей
+		.section-news {
+			.news__block {
+				.news {
+					.news__img {
+						width: 156px;
+						height: 87.75px;
+					}
+				}
+			}
+		}
+
+		// Слайдер "Официальный дилер Volkswagen"
+		.section-dealer {
+			.dealer {
+				.dealer__block {
+					img {
+						min-width: 450px;
+					}
+				}
+			}
+			.dealer__location {
+				.dealer__centre {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 540px){
+	.content {
+		header {
+			.header-section {
+				grid-template-columns: 1.5fr .5fr .5fr;
+			}
+		}
+
+		// Стиль и слайдер второй секции 
+		.section-products {
+			// Слайдер под "Акции и спецпредложения"
+			.stock__slider {
+				.stock {
+					.stock__block {
+						img {
+							min-width: 422.94px;
+						}
+						.tiguan {
+							min-height: 159.91px;
+						}
+						.about-slide {
+							min-width: 400px;
+							.about-slide__buttons {
+								.btn {
+									width: 190px;
+									height: 40px;
+								}
+							}
+						}
+					}
+				}
+				
+			}
+		}
+
+		// Стиль и слайдер секции новостей
+		.section-news {
+			.news__block {
+				.news {
+					.news__img {
+						width: 131px;
+						height: 73px;
+					}
+					.news__btn {
+						padding: 6px 12px;
+					}
+				}
+			}
+		}
+
+		// Слайдер "Официальный дилер Volkswagen"
+		.section-dealer {
+			.dealer {
+				.dealer__block {
+					img {
+						min-width: 390px;
+					}
+				}
+			}
+			.dealer__location {
+				.dealer__btn {
+					button {
+						padding: 10px 48px;
+					}
+				}
+			}
+		}
+
+		// Форма для ввода данных (имя, номер)
+		.section-form {
+			.form__inputs {
+				.button__block {
+					.block__btn {
+						padding: 10px 42px;
+					}
+				}
+			}
+		}
+
+		// Информация о продукте
+		.section-features {
+			.features-services {
+				.service {
+					img {
+						width: 80px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 520px){
+	.content {
+		// Стиль и слайдер второй секции 
+		.section-products {
+			// Слайдер под "Акции и спецпредложения"
+			.stock__slider {
+				.stock {
+					.stock__block {
+						img,
+						.about-slide {
+							min-width: 371.41px;
+						}
+						.tiguan {
+							min-height: 149.44px;
+						}
+						.about-slide {
+							.about-slide__buttons {
+								.btn {
+									width: 190px;
+									height: 40px;
+								}
+							}
+						}
+					}
+				}
+				
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 500px){
+	.content {
+		// Футер на сайте
+		.section-footer {
+			.footer__links {
+				grid-template-columns: 1fr;
+				text-align: center;
+				.columns {
+					ul .link {
+						border-top: 0;
+					}
+				}
+				.fourth__column {
+					justify-self: center;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 470px){
+	.content {
+		// Шапка сайта
+		header {
+			.header-section {
+				grid-template-columns: 2fr 1fr;
+				grid-template-rows: 30px;
+				.header__call-form {
+					display: none;
+				}
+			}
+		}
+
+		// Стиль и слайдер второй секции 
+		.section-products {
+			// Слайдер под "Акции и спецпредложения"
+			.stock__slider {
+				.stock {
+					.stock__block {
+						img,
+						.about-slide {
+							min-width: 331.53px;
+						}
+						.tiguan {
+							min-height: 125.17px;
+						}
+						.about-slide {
+							.about-slide__buttons {
+								display: none;	
+							}
+						}
+					}
+				}
+				.stock__slider__arrows {
+					.stock__arrow {
+						top: -300px;
+					}
+				}				
+			}
+		}
+
+		// Стиль и слайдер секции новостей
+		.section-news {
+			.news__block {
+				.news {
+					.news__img {
+						width: 101px;
+						height: 56px;
+					}
+				}
+			}
+		}
+
+		// Слайдер "Официальный дилер Volkswagen"
+		.section-dealer {
+			.dealer {
+				.dealer__block {
+					img {
+						min-width: 300px;
+					}
+				}
+			}
+			.dealer__location {
+				padding-bottom: 40px;
+				.dealer__btn {
+					display: none;
+				}
+			}
+		}
+
+		// Форма для ввода данных (имя, номер)
+		.section-form {
+			.form__inputs {
+				.button__block {
+					margin-bottom: 35px;
+					.block__btn {
+						width: 91%;
+						padding: 12px;
+					}
+				}
+			}
+		}
+	}
+
+	// Общие стили заголовок
+	.common-title {
+		font-size: 23px;
+	}
+}
+
+@media screen and (max-width: 420px){
+	.content {
+		// Стиль и слайдер второй секции 
+		.section-products {
+			// Слайдер под "Акции и спецпредложения"
+			.stock__slider {
+				.stock {
+					.stock__block {
+						img,
+						.about-slide {
+							min-width: 299.47px;
+						}
+						.tiguan {
+							min-height: 113.08px;
+						}
+					}
+				}
+				.stock__slider__arrows {
+					.stock__arrow {
+						top: -290px;
+					}
+				}				
+			}
+		}
+
+		// Стиль и слайдер секции новостей
+		.section-news {
+			.news__block {
+				.news {
+					.news__img {
+						margin: 0 auto;
+						width: 90px;
+						height: 50px;
+					}
+					.news__title {
+						margin-top: 15px;
+					}
+				}
+			}
+		}
+
+		// Слайдер "Официальный дилер Volkswagen"
+		.section-dealer {
+			.dealer {
+				.dealer__block {
+					img {
+						min-width: 250px;
+					}
+				}
+			}
+		}
+
+		// Форма для ввода данных (имя, номер)
+		.section-form {
+			.form__inputs {
+				.check__block {
+					.last__agree {
+						label {
+							span {
+								display: block;
+								margin-left: 28px;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		// Информация о продукте
+		.section-features {
+			.features-services {
+				.service {
+					img {
+						width: 60px;
+						align-self: start;
+					}
+					.link {
+						margin-top: 40px;
+						img {
+							align-self: center;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 380px){
+	.content {
+		.section-slider {
+			// Самый первый слайдер под шапкой
+			.first-slider {
+				.slider__arrows {
+					.slider__arrow {
+						top: 45px;
+					}
+				}
+			}
+		}
+
+		// Стиль и слайдер второй секции 
+		.section-products {
+			// Слайдер под "Акции и спецпредложения"
+			.stock__slider {
+				.stock {
+					.stock__block {
+						img,
+						.about-slide {
+							min-width: 263.5px;
+						}
+						.tiguan {
+							min-height: 99.48px;
+						}
+					}
+				}
+				.stock__slider__arrows {
+					.stock__arrow {
+						top: -270px;
+					}
+				}				
+			}
+		}
+
+		// Слайдер "Официальный дилер Volkswagen"
+		.section-dealer {
+			.dealer {
+				.dealer__block {
+					img {
+						max-width: 230px;
+					}
+				}
+			}
+		}
+
+		// Информация о продукте
+		.section-features {
+			.features-services {
+				.service {
+					img {
+						width: 60px;
+						align-self: start;
+					}
+					.link {
+						margin-top: 80px;
+						margin-left: 5px;
+						img {
+							align-self: center;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 340px){
+	.content {
+		// Стиль и слайдер второй секции 
+		.section-products {
+			// Слайдер под "Акции и спецпредложения"
+			.stock__slider {
+				.stock {
+					.stock__block {
+						img,
+						.about-slide {
+							max-width: 203.22px;
+						}
+						.tiguan {
+							max-height: 76.73px;
+						}
+					}
+				}
+				.stock__slider__arrows {
+					.stock__arrow {
+						top: -270px;
+						i {
+							font-size: 35px;
+						}
+					}
+				}				
+			}
+		}
+
+		// Слайдер "Официальный дилер Volkswagen"
+		.section-dealer {
+			.dealer {
+				margin-top: 53px;
+				.dealer__block {
+					img {
+						min-width: 200px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 320px){
+	.content {
+		.section-slider {
+			// Самый первый слайдер под шапкой
+			.first-slider {
+				.slider__arrows {
+					.slider__arrow {
+						top: 30px;
+					}
+				}
+			}
+		}
+
+		// Стиль и слайдер второй секции 
+		.section-products {
+			// Слайдер под "Акции и спецпредложения"
+			.stock__slider {
+				.stock {
+					.stock__block {
+						img,
+						.about-slide {
+							min-width: 190px;
+						}
+						.tiguan {
+							min-height: 70.25px;
+						}
+					}
+				}
+				.stock__slider__arrows {
+					.stock__arrow {
+						top: -300px;
+					}
+				}	
+			}
+		}
+		// Стиль и слайдер секции новостей
+		.section-news {
+			.news__block {
+				.news {
+					.news__img {
+						width: 56px;
+						height: 31px;
+					}
+					.news__title {
+						font-size: 12px;
+					}
+				}
+			}
+		}
+		// Слайдер "Официальный дилер Volkswagen"
+		.section-dealer {
+			.dealer {
+				margin-top: 53px;
+				.dealer__block {
+					img {
+						min-width: 150px;
+					}
+				}
+			}
+		}
+
+		// Форма для ввода данных (имя, номер)
+		.section-form {
+			.form__inputs {
+				.check__block {
+					.first__agree {
+						label {
+							a {
+								span {
+									display: block;
+									margin-left: 28px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		// Информация о продукте
+		.section-features {
+			.features-services {
+				.service {
+					img {
+						width: 40px;
+						align-self: start;
+					}
+					.link {
+						margin-top: 80px;
+						margin-left: 0px;
+						img {
+							align-self: center;
+						}
+					}
+				}
+			}
+		}
+	}
+}

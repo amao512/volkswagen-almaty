@@ -1,0 +1,71 @@
+$head-color: #1d1f20;
+$text-color: #333;
+$btn-color: #009DDA;
+$hov-btn: #0068AA;
+
+// Голубые кнопки
+.btn-blue {
+	font-size: 14px;
+	font-family: 'VW Text-Bold', sans-serif;
+	font-weight: 700;
+	color: #fff;
+	border: none;
+	background: $btn-color;
+	cursor: pointer;
+	padding: 4px 9px;
+	border-radius: 4px;
+	transition: all 0s ease 0s;
+	outline: none;
+	&:hover {
+		background: $hov-btn;
+	}
+}
+
+// Белые кнопки
+.btn-white {
+	font-size: 14px;
+	font-family: 'VW Text-Bold', sans-serif;
+	font-weight: 700;
+	color: $btn-color;
+	border: 1px solid #dee1e3 !important;
+	background: #fff;
+	cursor: pointer;
+	padding: 4px 9px;
+	border-radius: 4px;
+	transition: all 0s ease 0s;
+	outline: none;
+	&:hover {
+		background: $hov-btn;
+		color: #fff;
+		border: 1px solid $hov-btn !important;
+	}
+}
+
+// Общие стили заголовок
+.common-title {
+	font-size: 45px;
+	font-weight: 600;
+	font-family: 'VW Head-Bold', sans-serif;
+	color: $head-color;
+	text-align: center;
+	line-height: 1.174;
+	letter-spacing: -0.25px;
+}
+
+// Общие стили текстов
+.common-text {
+	font-size: 16px;
+	font-family: 'Helvetica-Neue', sans-serif;
+	color: $text-color;
+	line-height: 25.008px;
+}
+
+// Общие стили для заголовок элемента или т.б.
+.head-title {
+	font-size: 28px;
+	font-family: 'Vw Head-Bold', sans-serif;
+	font-weight: 600;
+	letter-spacing: -0.25px;
+	line-height: 33px;
+	color: $head-color;
+}
